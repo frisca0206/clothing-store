@@ -28,6 +28,12 @@
                         <p> Bahan Baju </p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="<?= url_to('merek') ?>" class="nav-link">
+                        <i class="fas fa-rocket nav-icon"></i>
+                        <p> Merek </p>
+                    </a>
+                </li>
                 </li>
             </ul>
         </nav>

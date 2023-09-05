@@ -15,3 +15,11 @@ $routes->get('/bhn_baju/delete/(:num)', 'Bhn_BajuController::delete/$1',['as' =>
 $routes->get('/bhn_baju/create', 'Bhn_BajuController::create',['as' => 'bhn_baju-create']);
 $routes->post('/bhn_baju/store', 'Bhn_BajuController::store',['as' => 'bhn_baju-store']);
 $routes->post('/bhn_baju/update', 'Bhn_BajuController::update',['as' => 'bhn_baju-update']);
+
+
+$routes->get('/merek', 'MerekController::index',['as' => 'merek']);
+$routes->get('/merek/edit/(:num)', 'MerekController::edit/$1',['as' => 'merek-edit']);
+$routes->get('/merek/delete/(:num)', 'MerekController::delete/$1',['as' => 'merek-delete']);
+$routes->get('/merek/create', 'MerekController::create',['as' => 'merek-create']);
+$routes->post('/merek/store', 'MerekController::store',['as' => 'merek-store']);
+$routes->post('/merek/update', 'MerekController::update',['as' => 'merek-update']);
