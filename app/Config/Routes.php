@@ -31,3 +31,10 @@ $routes->get('/baju/delete/(:num)', 'BajuController::delete/$1',['as' => 'baju-d
 $routes->get('/baju/create', 'BajuController::create',['as' => 'baju-create']);
 $routes->post('/baju/store', 'BajuController::store',['as' => 'baju-store']);
 $routes->post('/baju/update', 'BajuController::update',['as' => 'baju-update']);
+
+$routes->get('/bhn_celana', 'Bhn_CelanaController::index',['as' => 'bhn_celana']);
+$routes->get('/bhn_celana/edit/(:num)', 'Bhn_CelanaController::edit/$1',['as' => 'bhn_celana-edit']);
+$routes->get('/bhn_celana/delete/(:num)', 'Bhn_CelanaController::delete/$1',['as' => 'bhn_celana-delete']);
+$routes->get('/bhn_celana/create', 'Bhn_CelanaController::create',['as' => 'bhn_celana-create']);
+$routes->post('/bhn_celana/store', 'Bhn_CelanaController::store',['as' => 'bhn_celana-store']);
+$routes->post('/bhn_celana/update', 'Bhn_CelanaController::update',['as' => 'bhn_celana-update']);

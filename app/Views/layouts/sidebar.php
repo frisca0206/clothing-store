@@ -40,6 +40,12 @@
                         <p> Baju </p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="<?= url_to('bhn_celana') ?>" class="nav-link">
+                        <i class="fas fa-shoe-prints nav-icon"></i>
+                        <p> Bahan Celana </p>
+                    </a>
+                </li>
                 </li>
             </ul>
         </nav>
