@@ -46,6 +46,12 @@
                         <p> Bahan Celana </p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="<?= url_to('celana') ?>" class="nav-link">
+                        <i class="fas fa-socks nav-icon"></i>
+                        <p> Celana </p>
+                    </a>
+                </li>
                 </li>
             </ul>
         </nav>

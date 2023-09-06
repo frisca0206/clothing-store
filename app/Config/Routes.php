@@ -38,3 +38,10 @@ $routes->get('/bhn_celana/delete/(:num)', 'Bhn_CelanaController::delete/$1',['as
 $routes->get('/bhn_celana/create', 'Bhn_CelanaController::create',['as' => 'bhn_celana-create']);
 $routes->post('/bhn_celana/store', 'Bhn_CelanaController::store',['as' => 'bhn_celana-store']);
 $routes->post('/bhn_celana/update', 'Bhn_CelanaController::update',['as' => 'bhn_celana-update']);
+
+$routes->get('/celana', 'CelanaController::index',['as' => 'celana']);
+$routes->get('/celana/edit/(:num)', 'CelanaController::edit/$1',['as' => 'celana-edit']);
+$routes->get('/celana/delete/(:num)', 'CelanaController::delete/$1',['as' => 'celana-delete']);
+$routes->get('/celana/create', 'CelanaController::create',['as' => 'celana-create']);
+$routes->post('/celana/store', 'CelanaController::store',['as' => 'celana-store']);
+$routes->post('/celana/update', 'CelanaController::update',['as' => 'celana-update']);
