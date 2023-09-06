@@ -23,3 +23,11 @@ $routes->get('/merek/delete/(:num)', 'MerekController::delete/$1',['as' => 'mere
 $routes->get('/merek/create', 'MerekController::create',['as' => 'merek-create']);
 $routes->post('/merek/store', 'MerekController::store',['as' => 'merek-store']);
 $routes->post('/merek/update', 'MerekController::update',['as' => 'merek-update']);
+
+
+$routes->get('/baju', 'BajuController::index',['as' => 'baju']);
+$routes->get('/baju/edit/(:num)', 'BajuController::edit/$1',['as' => 'baju-edit']);
+$routes->get('/baju/delete/(:num)', 'BajuController::delete/$1',['as' => 'baju-delete']);
+$routes->get('/baju/create', 'BajuController::create',['as' => 'baju-create']);
+$routes->post('/baju/store', 'BajuController::store',['as' => 'baju-store']);
+$routes->post('/baju/update', 'BajuController::update',['as' => 'baju-update']);

@@ -34,6 +34,12 @@
                         <p> Merek </p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="<?= url_to('baju') ?>" class="nav-link">
+                        <i class="fas fa-tshirt nav-icon"></i>
+                        <p> Baju </p>
+                    </a>
+                </li>
                 </li>
             </ul>
         </nav>
