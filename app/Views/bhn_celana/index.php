@@ -22,7 +22,7 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title">Manage Bahan Celana</h3>
+                            <h3 class="card-title">Manage Pants Material</h3>
                             <div class="d-flex justify-content-end mb-1">
                                 <a href="<?= url_to('bhn_celana-create') ?>" class="btn btn-success mb-2"
                                     id="btn_modal_create">Create</a>
@@ -34,7 +34,7 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Nama Bahan</th>
+                                        <th>Pants Material Name</th>
                                         <th width="150">Action</th>
                                     </tr>
                                 </thead>

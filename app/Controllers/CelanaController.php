@@ -26,8 +26,8 @@ class CelanaController extends BaseController
         ->join('merek','merek.id = celana.merek_id')->findAll();
     
         $data = [
-            'title' => 'Celana Management',
-            'page_title' => 'Celana List',
+            'title' => 'Pants Management',
+            'page_title' => 'Pants List',
             'trousers' => $trousers
         ];
         return view('celana/index', $data);
@@ -36,8 +36,8 @@ class CelanaController extends BaseController
     public function create()
     {
         $data = [
-            'title' => 'Celana Management',
-            'page_title' => 'Create Celana',
+            'title' => 'Pants Management',
+            'page_title' => 'Create Pants',
             'bahans_celana' => $this->Bhn_CelanaModel->findAll(),
             'mereks' => $this->MerekModel->findAll(),
         ];
@@ -66,8 +66,8 @@ class CelanaController extends BaseController
     public function edit($celana_id)
     {
         $data = [
-            'title' => 'Celana Management',
-            'page_title' => 'Edit Celana',
+            'title' => 'Pants Management',
+            'page_title' => 'Edit Pants',
             'celana' => $this->CelanaModel->find($celana_id),
             'bahans_celana' => $this->Bhn_CelanaModel->findAll(),
             'mereks' => $this->MerekModel->findAll(),

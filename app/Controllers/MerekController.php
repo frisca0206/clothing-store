@@ -18,8 +18,8 @@ class MerekController extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'Merek Management',
-            'page_title' => 'Merek List',
+            'title' => 'Brand Management',
+            'page_title' => 'Brand List',
             'mereks' => $this->MerekModel->findAll()
         ];
         return view('merek/index', $data);
@@ -28,8 +28,8 @@ class MerekController extends BaseController
     public function create()
     {
         $data = [
-            'title' => 'Merek Management',
-            'page_title' => 'Merek List',
+            'title' => 'Brand Management',
+            'page_title' => 'Brand List',
         ];
 
         return view('merek/create', $data);
@@ -50,8 +50,8 @@ class MerekController extends BaseController
     public function edit($merek_id)
     {
         $data = [
-            'title' => 'Merek Management',
-            'page_title' => 'Edit Merek',
+            'title' => 'Brand Management',
+            'page_title' => 'Edit Brand',
             'merek' => $this->MerekModel->find($merek_id)
         ];
         return view('merek/edit', $data);

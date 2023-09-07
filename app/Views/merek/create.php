@@ -28,14 +28,14 @@
                                 <div class="row">
                                     <div class="col-md-6 col-sm-12">
                                         <div class="form-group">
-                                            <label for="merek">Merek</label>
+                                            <label for="merek">Brand</label>
                                             <input type="text" class="form-control" id="merek" name="merek" required>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-12 text-right">
                                     <a href="<?= url_to('merek') ?>" type="button" class="btn btn-secondary">Cancel</a>
-                                    <button type="submit" class="btn btn-primary" id="btn_submit">Add Merek</button>
+                                    <button type="submit" class="btn btn-primary" id="btn_submit">Add Brand</button>
                                 </div>
                             </form>
                         </div>

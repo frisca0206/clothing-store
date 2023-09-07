@@ -29,12 +29,12 @@
                                 <div class="row">
                                     <div class="col-md-6 col-sm-12">
                                         <div class="form-group">
-                                            <label for="nama_pembeli">Nama Pembeli</label>
+                                            <label for="nama_pembeli">Buyer's Name</label>
                                             <input type="text" class="form-control" id="nama_pembeli"
                                                 name="nama_pembeli" value="<?= $baju['nama_pembeli'] ?>" required>
                                         </div>
                                         <div class="form-group">
-                                            <label for="bhn_baju">Bahan Baju</label>
+                                            <label for="bhn_baju">Clothing Material</label>
                                             <select id="bhn_baju" class="form-control" name="bhn_baju" class="bhn_baju">
                                                 <option value=""></option>
                                                 <?php foreach ($bahans_baju as $key => $bhn_baju) : ?>
@@ -45,7 +45,7 @@
                                             </select>
                                         </div>
                                         <div class="form-group">
-                                            <label for="merek">Merek</label>
+                                            <label for="merek">Brand</label>
                                             <select id="merek" class="form-control" name="merek" class="merek">
                                                 <option value=""></option>
                                                 <?php foreach ($mereks as $key => $merek) : ?>
@@ -56,7 +56,7 @@
                                             </select>
                                         </div>
                                         <div class="form-group">
-                                            <label for="harga">Harga</label>
+                                            <label for="harga">Price</label>
                                             <input type="text" class="form-control" id="harga" name="harga"
                                                 value="<?= $baju['harga'] ?>" required>
                                         </div>
@@ -64,7 +64,7 @@
                                 </div>
                                 <div class="col-md-6 col-sm-12 text-right">
                                     <a href="<?= url_to('baju') ?>" type="button" class="btn btn-secondary">Cancel</a>
-                                    <button type="submit" class="btn btn-primary" id="btn_submit">Update Baju</button>
+                                    <button type="submit" class="btn btn-primary" id="btn_submit">Update T-Shirt</button>
                                 </div>
                             </form>
                         </div>

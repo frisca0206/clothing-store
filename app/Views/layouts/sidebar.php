@@ -25,31 +25,31 @@
                 <li class="nav-item">
                     <a href="<?= url_to('bhn_baju') ?>" class="nav-link">
                         <i class="fas fa-seedling nav-icon"></i>
-                        <p> Bahan Baju </p>
+                        <p> Clothing Material </p>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="<?= url_to('merek') ?>" class="nav-link">
                         <i class="fas fa-rocket nav-icon"></i>
-                        <p> Merek </p>
+                        <p> Brand </p>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="<?= url_to('baju') ?>" class="nav-link">
                         <i class="fas fa-tshirt nav-icon"></i>
-                        <p> Baju </p>
+                        <p> T-Shirt </p>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="<?= url_to('bhn_celana') ?>" class="nav-link">
                         <i class="fas fa-shoe-prints nav-icon"></i>
-                        <p> Bahan Celana </p>
+                        <p> Pants Material </p>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="<?= url_to('celana') ?>" class="nav-link">
                         <i class="fas fa-socks nav-icon"></i>
-                        <p> Celana </p>
+                        <p> Pants </p>
                     </a>
                 </li>
                 </li>

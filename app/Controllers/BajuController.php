@@ -26,8 +26,8 @@ class BajuController extends BaseController
         ->join('merek','merek.id = baju.merek_id')->findAll();
 
         $data = [
-            'title' => 'Baju Management',
-            'page_title' => 'Baju List',
+            'title' => 'T-Shirt Management',
+            'page_title' => 'T-Shirt List',
             'shirts' => $shirts
         ];
         return view('baju/index', $data);
@@ -36,8 +36,8 @@ class BajuController extends BaseController
     public function create()
     {
         $data = [
-            'title' => 'Baju Management',
-            'page_title' => 'Baju List',
+            'title' => 'T-Shirt Management',
+            'page_title' => 'T-Shirt List',
             'bahans_baju' => $this->Bhn_BajuModel->findAll(),
             'mereks' => $this->MerekModel->findAll(),
         ];
@@ -66,8 +66,8 @@ class BajuController extends BaseController
     public function edit($baju_id)
     {
         $data = [
-            'title' => 'Baju Management',
-            'page_title' => 'Edit Baju',
+            'title' => 'T-Shirt Management',
+            'page_title' => 'Edit T-Shirt',
             'baju' => $this->BajuModel->find($baju_id),
             'bahans_baju' => $this->Bhn_BajuModel->findAll(),
             'mereks' => $this->MerekModel->findAll(),

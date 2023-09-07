@@ -18,8 +18,8 @@ class Bhn_CelanaController extends BaseController
     public function index()
     {
         $data = [
-            'title'=>'Bahan Celana Management',
-            'page_title' => 'Bahan Celana List',
+            'title'=>'Pants Material Management',
+            'page_title' => 'Pants Material List',
             'bahans_celana' => $this->Bhn_CelanaModel->findAll()
         ];
         return view('bhn_celana/index', $data);
@@ -28,8 +28,8 @@ class Bhn_CelanaController extends BaseController
     public function create()
     {
         $data = [
-            'title' => 'Bahan Celana Management',
-            'page_title' => 'Bahan Celana List',
+            'title' => 'Pants Material Management',
+            'page_title' => 'Pants Material List',
         ];
 
         return view('bhn_celana/create', $data);
@@ -50,8 +50,8 @@ class Bhn_CelanaController extends BaseController
    public function edit($bhn_celana_id)
    {
         $data = [
-            'title' => 'Bahan Celana Management',
-            'page_title' => 'Edit Bahan Celana',
+            'title' => 'Pants Material Management',
+            'page_title' => 'Edit Pants Material',
             'bhn_celana' => $this->Bhn_CelanaModel->find($bhn_celana_id)
         ];
         return view('bhn_celana/edit', $data);

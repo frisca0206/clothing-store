@@ -18,8 +18,8 @@ class Bhn_BajuController extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'Bahan Baju Management',
-            'page_title' => 'Bahan Baju List',
+            'title' => 'Clothing Material Management',
+            'page_title' => 'Clothing Material List',
             'bahans_baju' => $this->Bhn_BajuModel->findAll()
         ];
         return view('bhn_baju/index', $data);
@@ -28,8 +28,8 @@ class Bhn_BajuController extends BaseController
     public function create()
     {
         $data = [
-            'title' => 'Bahan Baju Management',
-            'page_title' => 'Bahan Baju list',
+            'title' => 'Clothing Material Management',
+            'page_title' => 'Clothing Material list',
         ];
 
         return view('bhn_baju/create', $data);
@@ -50,8 +50,8 @@ class Bhn_BajuController extends BaseController
     public function edit($bhn_baju_id)
     {
         $data = [
-            'title' => 'Bahan Baju Management',
-            'page_title' => 'Edit Bahan Baju',
+            'title' => 'Clothing Material Management',
+            'page_title' => 'Edit Clothing Material',
             'bhn_baju' => $this->Bhn_BajuModel->find($bhn_baju_id)
         ];
         return view('bhn_baju/edit', $data);

@@ -29,7 +29,7 @@
                                 <div class="row">
                                     <div class="col-md-6 col-sm-12">
                                         <div class="form-group">
-                                            <label for="bhn_baju">Bahan Baju</label>
+                                            <label for="bhn_baju">Clothing Material Name</label>
                                             <input type="text" class="form-control" id="bhn_baju" name="bhn_baju"
                                                 value="<?= $bhn_baju['bhn_baju'] ?>" required>
                                         </div>
@@ -38,7 +38,7 @@
                                 <div class="col-md-6 col-sm-12">
                                     <a href="<?= url_to('bhn_baju') ?>" type="button"
                                         class="btn btn-secondary">Cancel</a>
-                                    <button type="submit" class="btn btn-primary" id="btn-submit">Update Bahan</button>
+                                    <button type="submit" class="btn btn-primary" id="btn-submit">Update Clothing Material</button>
                                 </div>
                             </form>
                         </div>
