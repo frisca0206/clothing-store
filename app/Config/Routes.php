@@ -32,6 +32,7 @@ $routes->get('/baju/create', 'BajuController::create',['as' => 'baju-create']);
 $routes->post('/baju/store', 'BajuController::store',['as' => 'baju-store']);
 $routes->post('/baju/update', 'BajuController::update',['as' => 'baju-update']);
 
+
 $routes->get('/bhn_celana', 'Bhn_CelanaController::index',['as' => 'bhn_celana']);
 $routes->get('/bhn_celana/edit/(:num)', 'Bhn_CelanaController::edit/$1',['as' => 'bhn_celana-edit']);
 $routes->get('/bhn_celana/delete/(:num)', 'Bhn_CelanaController::delete/$1',['as' => 'bhn_celana-delete']);
@@ -39,9 +40,18 @@ $routes->get('/bhn_celana/create', 'Bhn_CelanaController::create',['as' => 'bhn_
 $routes->post('/bhn_celana/store', 'Bhn_CelanaController::store',['as' => 'bhn_celana-store']);
 $routes->post('/bhn_celana/update', 'Bhn_CelanaController::update',['as' => 'bhn_celana-update']);
 
+
 $routes->get('/celana', 'CelanaController::index',['as' => 'celana']);
 $routes->get('/celana/edit/(:num)', 'CelanaController::edit/$1',['as' => 'celana-edit']);
 $routes->get('/celana/delete/(:num)', 'CelanaController::delete/$1',['as' => 'celana-delete']);
 $routes->get('/celana/create', 'CelanaController::create',['as' => 'celana-create']);
 $routes->post('/celana/store', 'CelanaController::store',['as' => 'celana-store']);
 $routes->post('/celana/update', 'CelanaController::update',['as' => 'celana-update']);
+
+
+$routes->get('/gudang', 'GudangController::index',['as' => 'gudang']);
+$routes->get('/gudang/edit/(:num)', 'GudangController::edit/$1',['as' => 'gudang-edit']);
+$routes->get('/gudang/delete/(:num)', 'GudangController::delete/$1',['as' => 'gudang-delete']);
+$routes->get('/gudang/create', 'GudangController::create',['as' => 'gudang-create']);
+$routes->post('/gudang/store', 'GudangController::store',['as' => 'gudang-store']);
+$routes->post('/gudang/update', 'GudangController::update',['as' => 'gudang-update']);

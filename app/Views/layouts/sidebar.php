@@ -52,6 +52,12 @@
                         <p> Pants </p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="<?= url_to('gudang') ?>" class="nav-link">
+                        <i class="fas fa-warehouse nav-icon"></i>
+                        <p> Warehouse </p>
+                    </a>
+                </li>
                 </li>
             </ul>
         </nav>
