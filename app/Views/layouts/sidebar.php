@@ -58,6 +58,12 @@
                         <p> Warehouse </p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="<?= url_to('stok_baju') ?>" class="nav-link">
+                        <i class="fas fa-list-alt nav-icon"></i>
+                        <p> Stock of T-shirt </p>
+                    </a>
+                </li>
                 </li>
             </ul>
         </nav>

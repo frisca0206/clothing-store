@@ -55,3 +55,11 @@ $routes->get('/gudang/delete/(:num)', 'GudangController::delete/$1',['as' => 'gu
 $routes->get('/gudang/create', 'GudangController::create',['as' => 'gudang-create']);
 $routes->post('/gudang/store', 'GudangController::store',['as' => 'gudang-store']);
 $routes->post('/gudang/update', 'GudangController::update',['as' => 'gudang-update']);
+
+
+$routes->get('/stok_baju', 'Stok_BajuController::index',['as' => 'stok_baju']);
+$routes->get('/stok_baju/edit/(:num)', 'Stok_BajuController::edit/$1',['as' => 'stok_baju-edit']);
+$routes->get('/stok_baju/delete/(:num)', 'Stok_BajuController::delete/$1',['as' => 'stok_baju-delete']);
+$routes->get('/stok_baju/create', 'Stok_BajuController::create',['as' => 'stok_baju-create']);
+$routes->post('/stok_baju/store', 'Stok_BajuController::store',['as' => 'stok_baju-store']);
+$routes->post('/stok_baju/update', 'Stok_BajuController::update',['as' => 'stok_baju-update']);
