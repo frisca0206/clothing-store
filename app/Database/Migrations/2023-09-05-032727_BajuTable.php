@@ -16,7 +16,7 @@ class BajuTable extends Migration
                 'unsigned' => true,
                 'auto_increment' => true,
             ],
-            'nama_pembeli' => [
+            'nama_baju' => [
                 'type' => 'varchar',
                 'constraint' => 225,
             ],

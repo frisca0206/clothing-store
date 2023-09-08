@@ -16,7 +16,7 @@ class CelanaTable extends Migration
                 'unsigned' => true,
                 'auto_increment' => true,
             ],
-            'nama_pembeli' => [
+            'nama_celana' => [
                 'type' => 'varchar',
                 'constraint' => 225,
             ],

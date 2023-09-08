@@ -63,3 +63,11 @@ $routes->get('/stok_baju/delete/(:num)', 'Stok_BajuController::delete/$1',['as' 
 $routes->get('/stok_baju/create', 'Stok_BajuController::create',['as' => 'stok_baju-create']);
 $routes->post('/stok_baju/store', 'Stok_BajuController::store',['as' => 'stok_baju-store']);
 $routes->post('/stok_baju/update', 'Stok_BajuController::update',['as' => 'stok_baju-update']);
+
+
+$routes->get('/stok_celana', 'Stok_CelanaController::index',['as' => 'stok_celana']);
+$routes->get('/stok_celana/edit/(:num)', 'Stok_CelanaController::edit/$1',['as' => 'stok_celana-edit']);
+$routes->get('/stok_celana/delete/(:num)', 'Stok_CelanaController::delete/$1',['as' => 'stok_celana-delete']);
+$routes->get('/stok_celana/create', 'Stok_CelanaController::create',['as' => 'stok_celana-create']);
+$routes->post('/stok_celana/store', 'Stok_CelanaController::store',['as' => 'stok_celana-store']);
+$routes->post('/stok_celana/update', 'Stok_CelanaController::update',['as' => 'stok_celana-update']);

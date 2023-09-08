@@ -31,6 +31,16 @@ class GudangTableSeeder extends Seeder
                 'gudang' => 'Gudang Celana 2',
                 'deskripsi' => 'Gudang Celana 2',
             ],
+            [
+                'id' => 5,
+                'gudang' => 'Gudang Celana 3',
+                'deskripsi' => 'Gudang Celana 3',
+            ],
+            [
+                'id' => 6,
+                'gudang' => 'Gudang Celana 4',
+                'deskripsi' => 'Gudang Celana 4',
+            ],
         ];
         $this->db->table($this->table)->insertBatch($data);
     }

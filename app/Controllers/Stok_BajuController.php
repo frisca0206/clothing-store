@@ -21,7 +21,7 @@ class Stok_BajuController extends BaseController
 
     public function index()
     {
-        $stoks_baju = $this->Stok_BajuModel->select('stok_baju.*,baju.bhn_baju_id,gudang.gudang')
+        $stoks_baju = $this->Stok_BajuModel->select('stok_baju.*,baju.nama_baju,gudang.gudang')
         ->join('baju','baju.id = stok_baju.baju_id')
         ->join('gudang','gudang.id = stok_baju.gudang_id')->findAll();
 
@@ -47,7 +47,7 @@ class Stok_BajuController extends BaseController
 
     public function store()
     {
-        $baju = $this->request->getPost('bhn_baju_id');
+        $baju = $this->request->getPost('nama_baju');
         $gudang = $this->request->getPost('gudang');
         $jumlah_stok = $this->request->getPost('jumlah_stok');
 
@@ -76,7 +76,7 @@ class Stok_BajuController extends BaseController
      public function update()
      {
         $stok_baju_id = $this->request->getPost('stok_baju_id');
-        $baju = $this->request->getPost('bhn_baju_id');
+        $baju = $this->request->getPost('nama_baju');
         $gudang = $this->request->getPost('gudang');
         $jumlah_stok = $this->request->getPost('jumlah_stok');
 

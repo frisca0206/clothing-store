@@ -29,9 +29,9 @@
                                 <div class="row">
                                     <div class="col-md-6 col-sm-12">
                                         <div class="form-group">
-                                            <label for="nama_pembeli">Buyer's Name</label>
-                                            <input type="text" class="form-control" id="nama_pembeli"
-                                                name="nama_pembeli" value="<?= $baju['nama_pembeli'] ?>" required>
+                                            <label for="nama_pembeli">T-shirt Name</label>
+                                            <input type="text" class="form-control" id="nama_baju"
+                                                name="nama_baju" value="<?= $baju['nama_baju'] ?>" required>
                                         </div>
                                         <div class="form-group">
                                             <label for="bhn_baju">Clothing Material</label>

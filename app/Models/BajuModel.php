@@ -13,7 +13,7 @@ class BajuModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['nama_pembeli','bhn_baju_id', 'merek_id', 'harga'];
+    protected $allowedFields    = ['nama_baju','bhn_baju_id', 'merek_id', 'harga'];
 
     // Dates
     protected $useTimestamps = false;

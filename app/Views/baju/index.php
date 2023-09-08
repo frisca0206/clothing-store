@@ -34,7 +34,7 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Buyer's Name</th>
+                                        <th>T-shirt Name</th>
                                         <th>Clothing Material</th>
                                         <th>Brand</th>
                                         <th>Price</th>
@@ -45,7 +45,7 @@
                                     <?php foreach ($shirts as $key => $baju) : ?>
                                     <tr>
                                         <td><?= $key + 1 ?></td>
-                                        <td><?= $baju['nama_pembeli'] ?></td>
+                                        <td><?= $baju['nama_baju'] ?></td>
                                         <td><?= $baju['bhn_baju'] ?></td>
                                         <td><?= $baju['merek'] ?></td>
                                         <td><?= $baju['harga'] ?></td>

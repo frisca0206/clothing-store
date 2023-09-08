@@ -28,12 +28,12 @@
                                 <div class="row">
                                     <div class="col-md-6 col-sm-12">
                                         <div class="form-group">
-                                            <label for="bhn_baju_id">T-shirt</label>
-                                            <select id="bhn_baju_id" name="bhn_baju_id" class="form-control">
+                                            <label for="nama_baju">T-shirt Name</label>
+                                            <select id="nama_baju" name="nama_baju" class="form-control">
                                                 <option value=""></option>
                                                 <?php foreach ($shirts as $key => $baju) : ?>
                                                 <option value="<?php echo $baju['id'] ?>">
-                                                    <?php echo $baju['bhn_baju_id']; ?>
+                                                    <?php echo $baju['nama_baju']; ?>
                                                 </option>
                                                 <?php  endforeach ?>
                                             </select>

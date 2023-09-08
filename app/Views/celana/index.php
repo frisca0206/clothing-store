@@ -34,7 +34,7 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Buyer's Name</th>
+                                        <th>Pants Name</th>
                                         <th>Pants Material</th>
                                         <th>Brand</th>
                                         <th>Price</th>
@@ -45,7 +45,7 @@
                                     <?php foreach ($trousers as $key => $celana) : ?>
                                     <tr>
                                         <td><?= $key + 1 ?></td>
-                                        <td><?= $celana['nama_pembeli'] ?></td>
+                                        <td><?= $celana['nama_celana'] ?></td>
                                         <td><?= $celana['bhn_celana'] ?></td>
                                         <td><?= $celana['merek'] ?></td>
                                         <td><?= $celana['harga'] ?></td>

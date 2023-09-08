@@ -16,6 +16,8 @@ class StokBajuTableSeeder extends Seeder
                 'baju_id' => 1,
                 'gudang_id' =>  1,
                 'jumlah_stok' => 4,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
             ],
         ];
         $this->db->table($this->table)->insertBatch($data);

@@ -13,7 +13,7 @@ class CelanaTableSeeder extends Seeder
         $data = [
             [
                 'id' => 1,
-                'nama_pembeli' => 'roni',
+                'nama_celana' => 'lotto Matahari',
                 'bhn_celana_id' => 4,
                 'merek_id' => 4,
                 'harga' => 'Rp. 300.000',
