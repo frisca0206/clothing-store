@@ -29,9 +29,9 @@
                                 <div class="row">
                                     <div class="col-md-6 col-sm-12">
                                         <div class="form-group">
-                                            <label for="nama_pembeli">Pants Name</label>
-                                            <input type="text" class="form-control" id="nama_celana"
-                                                name="nama_celana" value="<?= $celana['nama_celana'] ?>" required>
+                                            <label for="nama_celana">Pants Name</label>
+                                            <input type="text" class="form-control" id="nama_celana" name="nama_celana"
+                                                value="<?= $celana['nama_celana'] ?>" required>
                                         </div>
                                         <div class="form-group">
                                             <label for="bhn_celana">Pants Material</label>

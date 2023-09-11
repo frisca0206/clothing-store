@@ -47,13 +47,13 @@ class CelanaController extends BaseController
 
     public function store()
     {
-        $nama_pembeli = $this->request->getPost('nama_pembeli');
+        $nama_celana = $this->request->getPost('nama_celana');
         $bhn_celana = $this->request->getPost('bhn_celana');
         $merek = $this->request->getPost('merek');
         $harga = $this->request->getPost('harga');
 
         $new_celana = [
-            'nama_pembeli' => $nama_pembeli,
+            'nama_celana' => $nama_celana,
             'bhn_celana_id' => $bhn_celana,
             'merek_id' => $merek,
             'harga' => $harga,
@@ -78,13 +78,13 @@ class CelanaController extends BaseController
     public function update()
     {
         $celana_id = $this->request->getPost('celana_id');
-        $nama_pembeli = $this->request->getPost('nama_pembeli');
+        $nama_celana = $this->request->getPost('nama_celana');
         $bhn_celana = $this->request->getPost('bhn_celana');
         $merek = $this->request->getPost('merek');
         $harga = $this->request->getPost('harga');
 
         $edit_celana = [
-            'nama_pembeli' => $nama_pembeli,
+            'nama_celana' => $nama_celana,
             'bhn_celana_id' => $bhn_celana,
             'merek_id' => $merek,
             'harga' => $harga,

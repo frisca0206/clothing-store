@@ -47,13 +47,13 @@ class BajuController extends BaseController
 
     public function store()
     {
-        $nama_pembeli = $this->request->getPost('nama_pembeli');
+        $nama_baju = $this->request->getPost('nama_baju');
         $bhn_baju = $this->request->getPost('bhn_baju');
         $merek = $this->request->getPost('merek');
         $harga = $this->request->getPost('harga');
 
         $new_baju = [
-            'nama_pembeli' => $nama_pembeli,
+            'nama_baju' => $nama_baju,
             'bhn_baju_id' => $bhn_baju,
             'merek_id' => $merek,
             'harga' => $harga,
@@ -78,13 +78,13 @@ class BajuController extends BaseController
     public function update()
     {
         $baju_id = $this->request->getPost('baju_id');
-        $nama_pembeli = $this->request->getPost('nama_pembeli');
+        $nama_baju = $this->request->getPost('nama_baju');
         $bhn_baju = $this->request->getPost('bhn_baju');
         $merek = $this->request->getPost('merek');
         $harga = $this->request->getPost('harga');
 
         $edit_baju = [
-            'nama_pembeli' => $nama_pembeli,
+            'nama_baju' => $nama_baju,
             'bhn_baju_id' => $bhn_baju,
             'merek_id' => $merek,
             'harga' => $harga,
