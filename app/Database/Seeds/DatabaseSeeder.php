@@ -16,5 +16,7 @@ class DatabaseSeeder extends Seeder
         $this->call('GudangTableSeeder');
         $this->call('StokBajuTableSeeder');
         $this->call('StokCelanaTableSeeder');
+        $this->call('PenjualanBajuTableSeeder');
+        $this->call('PenjualanCelanaTableSeeder');
     }
 }
