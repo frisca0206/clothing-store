@@ -12,7 +12,7 @@
 
         <!-- Sidebar Menu -->
         <nav class="mt-2">
-            <ul class="nav nav-pills nav-sidebar flex-column" data-weight="treeview" role="menu" dara-accordion="false">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" dara-accordion="false">
                 <!-- Add icons to the links using the .nav-icon class
             with font-awesome or any other icon font library -->
                 <li class="nav-header">Menu</li>
@@ -71,7 +71,7 @@
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-dolly-flatbed"></i>
-                        <p>Master Item<i class="right fas fa-angle-left"></i></p>
+                        <p>Stock Item<i class="right fas fa-angle-left"></i></p>
                     </a>
                     <ul class="nav nav-treeview pl-3">
                         <li class="nav-item">

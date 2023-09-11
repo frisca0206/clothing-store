@@ -22,7 +22,7 @@
                 <div class="col-12">
                     <div class="card">
                         <!-- /.card-header -->
-                        <div class="card-body">\
+                        <div class="card-body">
                             <form action="<?= url_to('stok_celana-update')?>" method="POST">
                                 <?= csrf_field() ?>
                                 <input type="hidden" name="stok_celana_id" value="<?= $stok_celana['id'] ?>">
