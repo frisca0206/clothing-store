@@ -79,3 +79,11 @@ $routes->get('/pnjln_baju/delete/(:num)', 'PnjlnBajuController::delete/$1',['as'
 $routes->get('/pnjln_baju/create', 'PnjlnBajuController::create',['as' => 'pnjln_baju-create']);
 $routes->post('/pnjln_baju/store', 'PnjlnBajuController::store',['as' => 'pnjln_baju-store']);
 $routes->post('/pnjln_baju/update', 'PnjlnBajuController::update',['as' => 'pnjln_baju-update']);
+
+
+$routes->get('/pnjln_celana', 'PnjlnCelanaController::index',['as' => 'pnjln_celana']);
+$routes->get('/pnjln_celana/edit/(:num)', 'PnjlnCelanaController::edit/$1',['as' => 'pnjln_celana-edit']);
+$routes->get('/pnjln_celana/delete/(:num)', 'PnjlnCelanaController::delete/$1',['as' => 'pnjln_celana-delete']);
+$routes->get('/pnjln_celana/create', 'PnjlnCelanaController::create',['as' => 'pnjln_celana-create']);
+$routes->post('/pnjln_celana/store', 'PnjlnCelanaController::store',['as' => 'pnjln_celana-store']);
+$routes->post('/pnjln_celana/update', 'PnjlnCelanaController::update',['as' => 'pnjln_celana-update']);

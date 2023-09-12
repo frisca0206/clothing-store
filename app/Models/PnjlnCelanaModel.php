@@ -4,16 +4,16 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class PnjlnBajuModel extends Model
+class PnjlnCelanaModel extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'pnjln_baju';
+    protected $table            = 'pnjln_celana';
     protected $primarykey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['baju_id','tanggal','nama_pembeli','jumlah_item','ttl_harga','ttl_dibayarkan','ttl_kembalian'];
+    protected $allowedFields    = ['celana_id','tanggal','nama_pembeli','jumlah_item','ttl_harga','ttl_dibayarkan','ttl_kembalian'];
 
     // Dates
     protected $useTimestamps = false;
