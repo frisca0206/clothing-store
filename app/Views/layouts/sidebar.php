@@ -88,6 +88,20 @@
                         </li>
                     </ul>
                 </li>
+                <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-dolly-flatbed"></i>
+                        <p>Transaction<i class="right fas fa-angle-left"></i></p>
+                    </a>
+                    <ul class="nav nav-treeview pl-3">
+                        <li class="nav-item">
+                            <a href="<?= url_to('pnjln_baju') ?>" class="nav-link">
+                                <i class="fas fa-hand-holding-usd nav-icon"></i>
+                                <p> T-shirt Sales </p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </nav>
         <!--/.sidebar-menu-->
