@@ -25,6 +25,10 @@ class CelanaController extends BaseController
         ->join('bhn_celana','bhn_celana.id = celana.bhn_celana_id')
         ->join('merek','merek.id = celana.merek_id')->findAll();
     
+        foreach ($trousers as $key => $celana){
+        $trousers[$key]['harga_rupiah'] = $this->rupiah($celana['harga']);
+        }
+
         $data = [
             'title' => 'Pants Management',
             'page_title' => 'Pants List',
@@ -98,5 +102,11 @@ class CelanaController extends BaseController
     {
         $this->CelanaModel->delete($celana_id);
         return redirect()->to('celana');
+    }
+
+    public function rupiah($angka)
+    {
+	    $hasil_rupiah = "Rp " . number_format($angka,2,',','.');
+        return $hasil_rupiah;
     }
 }

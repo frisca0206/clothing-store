@@ -48,7 +48,7 @@
                                         <td><?= $celana['nama_celana'] ?></td>
                                         <td><?= $celana['bhn_celana'] ?></td>
                                         <td><?= $celana['merek'] ?></td>
-                                        <td><?= $celana['harga'] ?></td>
+                                        <td><?= $celana['harga_rupiah'] ?></td>
                                         <td>
                                             <a href="<?= url_to('celana-edit', $celana['id'])?>"
                                                 class="btn btn-primary btn-sm">Edit</a>

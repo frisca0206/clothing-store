@@ -25,6 +25,10 @@ class BajuController extends BaseController
         ->join('bhn_baju','bhn_baju.id = baju.bhn_baju_id')
         ->join('merek','merek.id = baju.merek_id')->findAll();
 
+        foreach ($shirts as $key => $baju){
+        $shirts[$key]['harga_rupiah'] = $this->rupiah($baju['harga']);
+        }
+
         $data = [
             'title' => 'T-Shirt Management',
             'page_title' => 'T-Shirt List',
@@ -98,5 +102,11 @@ class BajuController extends BaseController
     {
         $this->BajuModel->delete($baju_id);
         return redirect()->to('baju');
+    }
+
+    public function rupiah($angka)
+    {
+	    $hasil_rupiah = "Rp " . number_format($angka,2,',','.');
+        return $hasil_rupiah;
     }
 }

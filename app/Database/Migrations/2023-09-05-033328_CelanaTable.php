@@ -29,8 +29,7 @@ class CelanaTable extends Migration
                 'unsigned' => true,
             ],
             'harga' => [
-                'type' => 'varchar',
-                'constraint' => 225,
+                'type' => 'int',
             ],
         ]);
         $this->forge->addKey('id', true);

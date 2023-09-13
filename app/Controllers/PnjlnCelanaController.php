@@ -21,6 +21,13 @@ class PnjlnCelanaController extends BaseController
         $pnjlns_celana = $this->PnjlnCelanaModel->select('pnjln_celana.*,celana.nama_celana')
         ->join('celana','celana.id = pnjln_celana.celana_id')->findAll();
 
+        foreach ($pnjlns_celana as $key => $pnjln_celana)
+        {
+            $pnjlns_celana[$key]['ttl_harga'] = $this->rupiah($pnjln_celana['ttl_harga']);
+            $pnjlns_celana[$key]['ttl_dibayarkan'] = $this->rupiah($pnjln_celana['ttl_dibayarkan']);
+            $pnjlns_celana[$key]['ttl_kembalian'] = $this->rupiah($pnjln_celana['ttl_kembalian']);
+        }
+
         $data = [
             'title' => 'Pants Sales Management',
             'page_title' => 'Pants Sales List',
@@ -104,5 +111,11 @@ class PnjlnCelanaController extends BaseController
     {
         $this->PnjlnCelanaModel->delete($pnjln_celana_id);
         return redirect()->to('pnjln_celana');
+    }
+
+    public function rupiah($angka)
+    {
+	    $hasil_rupiah = "Rp " . number_format($angka,2,',','.');
+        return $hasil_rupiah;
     }
 }

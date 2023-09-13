@@ -16,7 +16,14 @@ class BajuTableSeeder extends Seeder
                 'nama_baju' => 'Rajut H&M',
                 'bhn_baju_id' => 3,
                 'merek_id' => 2,
-                'harga' => 'Rp. 250.000',
+                'harga' => '250000',
+            ],
+            [
+                'id' => 2,
+                'nama_baju' => 'Polyester Levis',
+                'bhn_baju_id' => 3,
+                'merek_id' => 2,
+                'harga' => '300000',
             ],
         ];
         $this->db->table($this->table)->insertBatch($data);

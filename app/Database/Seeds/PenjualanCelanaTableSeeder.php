@@ -13,13 +13,13 @@ class PenjualanCelanaTableSeeder extends Seeder
          $data = [
             [
                 'id' => 1,
-                'celana_id' => 3,
+                'celana_id' => 1,
                 'tanggal' => '2023-09-11',
                 'nama_pembeli' => 'rahmi',
                 'jumlah_item' => 20,
-                'ttl_harga' => 'Rp. 350.000',
-                'ttl_dibayarkan' => 'Rp. 350.000',
-                'ttl_kembalian' => 'Rp, 0',
+                'ttl_harga' => '350000',
+                'ttl_dibayarkan' => '350000',
+                'ttl_kembalian' => '0',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ],

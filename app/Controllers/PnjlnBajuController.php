@@ -21,6 +21,13 @@ class PnjlnBajuController extends BaseController
         $pnjlns_baju = $this->PnjlnBajuModel->select('pnjln_baju.*,baju.nama_baju')
         ->join('baju','baju.id = pnjln_baju.baju_id')->findAll();
 
+        foreach ($pnjlns_baju as $key => $pnjln_baju)
+        {
+            $pnjlns_baju[$key]['ttl_harga'] = $this->rupiah($pnjln_baju['ttl_harga']);
+            $pnjlns_baju[$key]['ttl_dibayarkan'] = $this->rupiah($pnjln_baju['ttl_dibayarkan']);
+            $pnjlns_baju[$key]['ttl_kembalian'] = $this->rupiah($pnjln_baju['ttl_kembalian']);
+        }
+
         $data = [
             'title' => 'T-shirt Sales Management',
             'page_title' => 'T-shirt Sales List',
@@ -104,5 +111,11 @@ class PnjlnBajuController extends BaseController
     {
         $this->PnjlnBajuModel->delete($pnjln_baju_id);
         return redirect()->to('pnjln_baju');
+    }
+
+    public function rupiah($angka)
+    {
+	    $hasil_rupiah = "Rp " . number_format($angka,2,',','.');
+        return $hasil_rupiah;
     }
 }

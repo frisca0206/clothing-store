@@ -16,7 +16,7 @@ class PnjlnCelanaModel extends Model
     protected $allowedFields    = ['celana_id','tanggal','nama_pembeli','jumlah_item','ttl_harga','ttl_dibayarkan','ttl_kembalian'];
 
     // Dates
-    protected $useTimestamps = false;
+    protected $useTimestamps = true;
     protected $dateFormat    = 'datetime';
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';

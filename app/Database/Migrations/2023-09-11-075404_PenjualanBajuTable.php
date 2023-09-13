@@ -44,6 +44,14 @@ class PenjualanBajuTable extends Migration
                 'type' => 'varchar',
                 'constraint' => 225,
             ],
+            'created_at' => [
+                'type' => 'DATETIME',
+                'null' => false,
+            ],
+            'updated_at' => [
+                'type' => 'DATETIME',
+                'null' => false,
+            ],
         ]);
         $this->forge->addKey('id', true);
         $this->forge->addForeignKey('baju_id', 'baju', 'id', 'CASCADE', 'CASCADE');

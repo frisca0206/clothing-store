@@ -16,7 +16,7 @@ class CelanaTableSeeder extends Seeder
                 'nama_celana' => 'lotto Matahari',
                 'bhn_celana_id' => 4,
                 'merek_id' => 4,
-                'harga' => 'Rp. 300.000',
+                'harga' => '300000',
             ],
         ];
         $this->db->table($this->table)->insertBatch($data);

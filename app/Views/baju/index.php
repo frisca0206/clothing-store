@@ -48,7 +48,7 @@
                                         <td><?= $baju['nama_baju'] ?></td>
                                         <td><?= $baju['bhn_baju'] ?></td>
                                         <td><?= $baju['merek'] ?></td>
-                                        <td><?= $baju['harga'] ?></td>
+                                        <td><?= $baju['harga_rupiah'] ?></td>
                                         <td>
                                             <a href="<?= url_to('baju-edit', $baju['id'])?>"
                                                 class="btn btn-primary btn-sm">Edit</a>
