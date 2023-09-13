@@ -25,7 +25,7 @@
 
 
                 <li class="nav-item has-treeview">
-                    <a href="#" class="nav-link">
+                    <a href="" class="nav-link">
                         <i class="nav-icon fas fa-dolly-flatbed"></i>
                         <p>Master Data<i class="right fas fa-angle-left"></i></p>
                     </a>
@@ -69,7 +69,7 @@
                     </ul>
                 </li>
                 <li class="nav-item has-treeview">
-                    <a href="#" class="nav-link">
+                    <a href="" class="nav-link">
                         <i class="nav-icon fas fa-dolly-flatbed"></i>
                         <p>Stock Item<i class="right fas fa-angle-left"></i></p>
                     </a>
@@ -89,7 +89,7 @@
                     </ul>
                 </li>
                 <li class="nav-item has-treeview">
-                    <a href="#" class="nav-link">
+                    <a href="" class="nav-link">
                         <i class="nav-icon fas fa-dolly-flatbed"></i>
                         <p>Transaction<i class="right fas fa-angle-left"></i></p>
                     </a>
