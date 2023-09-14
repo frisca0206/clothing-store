@@ -35,7 +35,8 @@
                                             <select id="nama_baju" name="nama_baju" class="form-control">
                                                 <option value=""></option>
                                                 <?php foreach ($shirts as $key => $baju) : ?>
-                                                <option value="<?= $baju['id']; ?>"
+                                                <option value="<?= $baju['id']; ?>" 
+                                                data-harga-baju="<?= $baju['harga'];?>"
                                                     <?php if($pnjln_baju['baju_id'] == $baju['id']) echo "selected"; ?>>
                                                     <?= $baju['nama_baju']; ?></option>
                                                 <?php endforeach ?>
@@ -59,7 +60,7 @@
                                         <div class="form-group">
                                             <label for="ttl_harga">Total Price</label>
                                             <input type="text" class="form-control" id="ttl_harga" name="ttl_harga"
-                                                value="<?= $pnjln_baju['ttl_harga'] ?>" required>
+                                                value="<?= $pnjln_baju['ttl_harga'] ?>" required readonly>
                                         </div>
                                         <div class="form-group">
                                             <label for="ttl_dibayarkan">Total Paid</label>
@@ -71,7 +72,7 @@
                                             <label for="ttl_kembalian">Total Return</label>
                                             <input type="text" class="form-control" id="ttl_kembalian"
                                                 name="ttl_kembalian" value="<?= $pnjln_baju['ttl_kembalian'] ?>"
-                                                required>
+                                                required readonly>
                                         </div>
                                     </div>
                                 </div>
@@ -101,3 +102,28 @@
 
 
 <?= $this->endSection('content'); ?>
+
+<?= $this->Section('page_script'); ?>
+
+<script type="text/javascript">
+let total_harga = 0;
+
+$('#jumlah_item').on('input', function() {
+    let jumlah_item = this.value;
+    let harga_baju = $('#nama_baju option:selected').attr('data-harga-baju');
+    if (harga_baju) {
+        total_harga = harga_baju * jumlah_item;
+    } else {
+        total_harga = 0;
+    }
+    $('#ttl_harga').val(total_harga);
+});
+
+$('#ttl_dibayarkan').on('input', function() {
+    let total_dibayarkan = this.value;
+    total_kembalian = total_dibayarkan - total_harga;
+    $('#ttl_kembalian').val(total_kembalian);
+});
+</script>
+
+<?= $this->endSection('page_script'); ?>

@@ -34,7 +34,8 @@
                                             <select id="nama_baju" name="nama_baju" class="form-control">
                                                 <option value=""></option>
                                                 <?php foreach ($shirts as $key => $baju) : ?>
-                                                <option value="<?php echo $baju['id']; ?>" data-harga-baju="<?= $baju['harga'];?>">
+                                                <option value="<?php echo $baju['id']; ?>"
+                                                    data-harga-baju="<?= $baju['harga'];?>">
                                                     <?php echo $baju['nama_baju']; ?>
                                                 </option>
                                                 <?php endforeach ?>
@@ -102,25 +103,24 @@
 <?= $this->Section('page_script'); ?>
 
 <script type="text/javascript">
+let total_harga = 0;
 
-    let total_harga = 0;
-    
-    $('#jumlah_item').on('input', function() {
-        let jumlah_item = this.value;
-        let harga_baju = $('#nama_baju option:selected').attr('data-harga-baju');
-        if(harga_baju){
-            total_harga = harga_baju * jumlah_item;
-        } else {
-            total_harga = 0;
-        }
-        $('#ttl_harga').val(total_harga);
-    });
-    
-    $('#ttl_dibayarkan').on('input', function(){
-        let total_dibayarkan = this.value;
-        total_kembalian = total_dibayarkan - total_harga;
-        $('#ttl_kembalian').val(total_kembalian);
-    });
+$('#jumlah_item').on('input', function() {
+    let jumlah_item = this.value;
+    let harga_baju = $('#nama_baju option:selected').attr('data-harga-baju');
+    if (harga_baju) {
+        total_harga = harga_baju * jumlah_item;
+    } else {
+        total_harga = 0;
+    }
+    $('#ttl_harga').val(total_harga);
+});
+
+$('#ttl_dibayarkan').on('input', function() {
+    let total_dibayarkan = this.value;
+    total_kembalian = total_dibayarkan - total_harga;
+    $('#ttl_kembalian').val(total_kembalian);
+});
 </script>
 
 <?= $this->endSection('page_script'); ?>
