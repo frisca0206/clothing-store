@@ -106,7 +106,7 @@
 <?= $this->Section('page_script'); ?>
 
 <script type="text/javascript">
-let total_harga = 0;
+let total_harga = "<?= $pnjln_baju['ttl_harga'] ?>";
 
 $('#jumlah_item').on('input', function() {
     let jumlah_item = this.value;
