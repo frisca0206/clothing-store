@@ -5,7 +5,7 @@
 
     <style type="text/css">
     .bg-gambar {
-        background-image: url(images/pegawai.jpg);
+        background-image: url(images/clothing.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
