@@ -4,72 +4,68 @@ namespace App\Database\Seeds;
 
 use CodeIgniter\Database\Seeder;
 
-class MerekTableSeeder extends Seeder
+class UkuranSepatuTableSeeder extends Seeder
 {
-    private $table = 'merek';
+    private $table = 'ukuran_sepatu';
 
     public function run()
     {
         $data = [
             [
                 'id' => 1,
-                'merek' => 'uniqlo',
+                'ukuran_sepatu' => 30,
             ],
             [
                 'id' => 2,
-                'merek' => 'h&m',
+                'ukuran_sepatu' => 31,
             ],
             [
                 'id' => 3,
-                'merek' => 'zara',
+                'ukuran_sepatu' => 32,
             ],
             [
                 'id' => 4,
-                'merek' => 'matahari',
+                'ukuran_sepatu' => 33,
             ],
             [
                 'id' => 5,
-                'merek' => 'erigo',
+                'ukuran_sepatu' => 34,
             ],
             [
-                'id' => 6,
-                'merek' => 'levis',
+                'id' =>6,
+                'ukuran_sepatu' => 35,
             ],
             [
                 'id' => 7,
-                'merek' => 'converse',
+                'ukuran_sepatu' => 36,
             ],
             [
                 'id' => 8,
-                'merek' => 'adidas',
+                'ukuran_sepatu' => 37,
             ],
             [
                 'id' => 9,
-                'merek' => 'vans',
+                'ukuran_sepatu' => 38,
             ],
             [
                 'id' => 10,
-                'merek' => 'Superga',
+                'ukuran_sepatu' => 39,
             ],
             [
                 'id' => 11,
-                'merek' => 'league',
+                'ukuran_sepatu' => 40,
             ],
             [
                 'id' => 12,
-                'merek' => 'piero',
+                'ukuran_sepatu' => 41,
             ],
             [
                 'id' => 13,
-                'merek' => 'puma',
+                'ukuran_sepatu' => 42,
             ],
             [
                 'id' => 14,
-                'merek' => 'nike',
-            ],
-            [
-                'id' => 15,
-                'merek' => 'new balance',
+                'ukuran_sepatu' => 43,
             ],
         ];
         $this->db->table($this->table)->insertBatch($data);
