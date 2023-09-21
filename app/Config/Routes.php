@@ -93,3 +93,11 @@ $routes->get('/pnjln_celana/delete/(:num)', 'PnjlnCelanaController::delete/$1',[
 $routes->get('/pnjln_celana/create', 'PnjlnCelanaController::create',['as' => 'pnjln_celana-create']);
 $routes->post('/pnjln_celana/store', 'PnjlnCelanaController::store',['as' => 'pnjln_celana-store']);
 $routes->post('/pnjln_celana/update', 'PnjlnCelanaController::update',['as' => 'pnjln_celana-update']);
+
+
+$routes->get('/ukuran_sepatu', 'UkuranSepatuController::index',['as' => 'ukuran_sepatu']);
+$routes->get('/ukuran_sepatu/edit/(:num)', 'UkuranSepatuController::edit/$1',['as' => 'ukuran_sepatu-edit']);
+$routes->get('/ukuran_sepatu/delete/(:num)', 'UkuranSepatuController::delete/$1',['as' => 'ukuran_sepatu-delete']);
+$routes->get('/ukuran_sepatu/create', 'UkuranSepatuController::create',['as' => 'ukuran_sepatu-create']);
+$routes->post('/ukuran_sepatu/store', 'UkuranSepatuController::store',['as' => 'ukuran_sepatu-store']);
+$routes->post('/ukuran_sepatu/update', 'UkuranSepatuController::update',['as' => 'ukuran_sepatu-update']);

@@ -43,6 +43,12 @@
                             </a>
                         </li>
                         <li class="nav-item">
+                            <a href="<?= url_to('ukuran_sepatu') ?>" class="nav-link">
+                                <i class="fas fa-ruler nav-icon"></i>
+                                <p> Ukuran Sepatu </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a href="<?= url_to('baju') ?>" class="nav-link">
                                 <i class="fas fa-tshirt nav-icon"></i>
                                 <p> T-Shirt </p>
