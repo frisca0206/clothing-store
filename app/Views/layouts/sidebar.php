@@ -98,6 +98,12 @@
                                 <p> Stock of Pants </p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="<?= url_to('stok_sepatu') ?>" class="nav-link">
+                                <i class="fas fa-list-alt nav-icon"></i>
+                                <p> Stock of Shoes </p>
+                            </a>
+                        </li>
                     </ul>
                 </li>
                 <li class="nav-item has-treeview">

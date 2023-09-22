@@ -23,17 +23,17 @@
                     <div class="card">
                         <!-- /.card-header -->
                         <div class="card-body">
-                            <form action="<?= url_to('stok_celana-store')?>" method="POST">
+                            <form action="<?= url_to('stok_sepatu-store')?>" method="POST">
                                 <?= csrf_field() ?>
                                 <div class="row">
                                     <div class="col-md-6 col-sm-12">
                                         <div class="form-group">
-                                            <label for="nama_celana">Pants Name</label>
-                                            <select id="nama_celana" name="nama_celana" class="form-control">
+                                            <label for="nama_sepatu">Shoes Name</label>
+                                            <select id="nama_sepatu" name="nama_sepatu" class="form-control">
                                                 <option value=""></option>
-                                                <?php foreach ($trousers as $key => $celana) : ?>
-                                                <option value="<?php echo $celana['id']; ?>">
-                                                    <?php echo $celana['nama_celana']; ?>
+                                                <?php foreach ($shoes as $key => $shoe) : ?>
+                                                <option value="<?php echo $shoe['id']; ?>">
+                                                    <?php echo $shoe['nama_sepatu']; ?>
                                                 </option>
                                                 <?php endforeach ?>
                                             </select>
@@ -50,17 +50,17 @@
                                             </select>
                                         </div>
                                         <div class="form-group">
-                                            <label for="jumlah_stok">Stock Amount</label>
+                                            <label for="jumlah_stok"> Stock Amount </label>
                                             <input type="number" class="form-control" id="jumlah_stok"
                                                 name="jumlah_stok" required>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-12 text-right">
-                                    <a href="<?= url_to('stok_celana') ?>" type="button"
+                                    <a href="<?= url_to('stok_sepatu') ?>" type="button"
                                         class="btn btn-secondary">Cancel</a>
-                                    <button type="submit" class="btn btn-primary" id="btn_submit">Add Stock of Pants
-                                        </button>
+                                    <button type="submit" class="btn btn-primary" id="btn_submit">Create Stock
+                                        Of Shoes</button>
                                 </div>
                             </form>
                         </div>
