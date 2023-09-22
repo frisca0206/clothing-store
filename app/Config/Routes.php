@@ -101,3 +101,11 @@ $routes->get('/ukuran_sepatu/delete/(:num)', 'UkuranSepatuController::delete/$1'
 $routes->get('/ukuran_sepatu/create', 'UkuranSepatuController::create',['as' => 'ukuran_sepatu-create']);
 $routes->post('/ukuran_sepatu/store', 'UkuranSepatuController::store',['as' => 'ukuran_sepatu-store']);
 $routes->post('/ukuran_sepatu/update', 'UkuranSepatuController::update',['as' => 'ukuran_sepatu-update']);
+
+
+$routes->get('/sepatu', 'SepatuController::index',['as' => 'sepatu']);
+$routes->get('/sepatu/edit/(:num)', 'SepatuController::edit/$1',['as' => 'sepatu-edit']);
+$routes->get('/sepatu/delete/(:num)', 'SepatuController::delete/$1',['as' => 'sepatu-delete']);
+$routes->get('/sepatu/create', 'SepatuController::create',['as' => 'sepatu-create']);
+$routes->post('/sepatu/store', 'SepatuController::store',['as' => 'sepatu-store']);
+$routes->post('/sepatu/update', 'SepatuController::update',['as' => 'sepatu-update']);

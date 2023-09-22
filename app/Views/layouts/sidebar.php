@@ -32,20 +32,26 @@
                     <ul class="nav nav-treeview pl-3">
                         <li class="nav-item">
                             <a href="<?= url_to('bhn_baju') ?>" class="nav-link">
-                                <i class="fas fa-seedling nav-icon"></i>
+                                <i class="fas fa-spa nav-icon"></i>
                                 <p> Clothing Material </p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="<?= url_to('merek') ?>" class="nav-link">
-                                <i class="fas fa-rocket nav-icon"></i>
+                                <i class="fas fa-registered nav-icon"></i>
                                 <p> Brand </p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="<?= url_to('ukuran_sepatu') ?>" class="nav-link">
                                 <i class="fas fa-ruler nav-icon"></i>
-                                <p> Ukuran Sepatu </p>
+                                <p> Shoe Size </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?= url_to('sepatu') ?>" class="nav-link">
+                                <i class="fas fa-socks nav-icon"></i>
+                                <p> Shoe </p>
                             </a>
                         </li>
                         <li class="nav-item">

@@ -25,13 +25,13 @@
                         <div class="card-body">
                             <form action="<?= url_to('ukuran_sepatu-update')?>" method="POST">
                                 <?= csrf_field() ?>
-                                <input type="hidden" name="ukuran_sepatu_id" value="<?= $shoe['id'] ?>">
+                                <input type="hidden" name="ukuran_sepatu_id" value="<?= $size['id'] ?>">
                                 <div class="row">
                                     <div class="col-md-6 col-sm-12">
                                         <div class="form-group">
                                             <label for="ukuran_sepatu">Shoe Size</label>
                                             <input type="number" class="form-control" id="ukuran_sepatu"
-                                                name="ukuran_sepatu" value="<?= $shoe['ukuran_sepatu'] ?>"
+                                                name="ukuran_sepatu" value="<?= $size['ukuran_sepatu'] ?>"
                                                 required>
                                         </div>
                                     </div>

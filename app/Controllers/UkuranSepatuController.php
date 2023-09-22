@@ -19,7 +19,7 @@ class UkuranSepatuController extends BaseController
         $data = [
             'title' => 'Shoes Size Management',
             'page_title' => 'Shoes Size List',
-            'shoes' => $this->UkuranSepatuModel->findAll()
+            'sizes' => $this->UkuranSepatuModel->findAll()
         ];
         return view('ukuran_sepatu/index', $data);
     }
@@ -51,7 +51,7 @@ class UkuranSepatuController extends BaseController
         $data = [
             'title' => 'Shoes Size Management',
             'page_title' => 'Edit Size',
-            'shoe' => $this->UkuranSepatuModel->find($ukuran_sepatu_id)
+            'size' => $this->UkuranSepatuModel->find($ukuran_sepatu_id)
         ];
         return view('ukuran_sepatu/edit', $data);
     }

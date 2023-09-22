@@ -22,32 +22,37 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title">Manage Shoes Size</h3>
+                            <h3 class="card-title">Manage Shoe</h3>
                             <div class="d-flex justify-content-end mb-1">
-                                <a href="<?= url_to('ukuran_sepatu-create') ?>" class="btn btn-success mb-2"
+                                <a href="<?= url_to('sepatu-create') ?>" class="btn btn-success mb-2"
                                     id="btn_modal_create">Create</a>
                             </div>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
-                            <table id="ukuran_sepatu_table"
-                                class="table table-bordered table-hover masterdata-datatable">
+                            <table id="sepatu_table" class="table table-bordered table-hover masterdata-datatable">
                                 <thead>
                                     <tr>
                                         <th>No</th>
+                                        <th>Shoe Name</th>
                                         <th>Size</th>
+                                        <th>Brand</th>
+                                        <th>Price</th>
                                         <th width="150">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php foreach ($sizes as $key => $size) : ?>
+                                    <?php foreach ($shoes as $key => $shoe) : ?>
                                     <tr>
                                         <td><?= $key + 1 ?></td>
-                                        <td><?= $size['ukuran_sepatu'] ?></td>
+                                        <td><?= $shoe['nama_sepatu'] ?></td>
+                                        <td><?= $shoe['ukuran_sepatu'] ?></td>
+                                        <td><?= $shoe['merek'] ?></td>
+                                        <td><?= $shoe['harga'] ?></td>
                                         <td>
-                                            <a href="<?= url_to('ukuran_sepatu-edit', $size['id'])?>"
+                                            <a href="<?= url_to('sepatu-edit', $shoe['id'])?>"
                                                 class="btn btn-primary btn-sm">Edit</a>
-                                            <a href="<?= url_to('ukuran_sepatu-delete', $size['id'])?>"
+                                            <a href="<?= url_to('sepatu-delete', $shoe['id'])?>"
                                                 class="btn btn-danger btn-sm">Delete</a>
                                         </td>
                                     </tr>
@@ -55,7 +60,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <!-- /.card-boody -->
+                        <!-- /.card-body -->
                     </div>
                     <!-- /.card -->
 
