@@ -117,3 +117,11 @@ $routes->get('/stok_sepatu/delete/(:num)', 'StokSepatuController::delete/$1',['a
 $routes->get('/stok_sepatu/create', 'StokSepatuController::create',['as' => 'stok_sepatu-create']);
 $routes->post('/stok_sepatu/store', 'StokSepatuController::store',['as' => 'stok_sepatu-store']);
 $routes->post('/stok_sepatu/update', 'StokSepatuController::update',['as' => 'stok_sepatu-update']);
+
+
+$routes->get('/pnjln_sepatu', 'PnjlnSepatuController::index',['as' => 'pnjln_sepatu']);
+$routes->get('/pnjln_sepatu/edit/(:num)', 'PnjlnSepatuController::edit/$1',['as' => 'pnjln_sepatu-edit']);
+$routes->get('/pnjln_sepatu/delete/(:num)', 'PnjlnSepatuController::delete/$1',['as' => 'pnjln_sepatu-delete']);
+$routes->get('/pnjln_sepatu/create', 'PnjlnSepatuController::create',['as' => 'pnjln_sepatu-create']);
+$routes->post('/pnjln_sepatu/store', 'PnjlnSepatuController::store',['as' => 'pnjln_sepatu-store']);
+$routes->post('/pnjln_sepatu/update', 'PnjlnSepatuController::update',['as' => 'pnjln_sepatu-update']);

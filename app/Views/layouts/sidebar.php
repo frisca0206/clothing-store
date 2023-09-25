@@ -124,6 +124,12 @@
                                 <p> Pants Sales </p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="<?= url_to('pnjln_sepatu') ?>" class="nav-link">
+                                <i class="fas fa-hand-holding-usd nav-icon"></i>
+                                <p> Shoes Sales </p>
+                            </a>
+                        </li>
                     </ul>
                 </li>
             </ul>
