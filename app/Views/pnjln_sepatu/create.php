@@ -32,7 +32,8 @@
                                             <select id="nama_sepatu" name="nama_sepatu" class="form-control">
                                                 <option value=""></option>
                                                 <?php foreach ($shoes as $key => $shoe) : ?>
-                                                <option value="<?php echo $shoe['id']; ?>">
+                                                <option value="<?php echo $shoe['id']; ?>"
+                                                    data-harga-sepatu="<?= $shoe['harga'];?>">
                                                     <?php echo $shoe['nama_sepatu']; ?>
                                                 </option>
                                                 <?php endforeach ?>
@@ -56,7 +57,7 @@
                                         <div class="form-group">
                                             <label for="ttl_harga">Total Price</label>
                                             <input type="text" class="form-control" id="ttl_harga" name="ttl_harga"
-                                                required>
+                                                required readonly>
                                         </div>
                                         <div class="form-group">
                                             <label for="ttl_dibayarkan">Total Paid</label>
@@ -66,7 +67,7 @@
                                         <div class="form-group">
                                             <label for="ttl_kembalian">Total Return</label>
                                             <input type="text" class="form-control" id="ttl_kembalian"
-                                                name="ttl_kembalian" required>
+                                                name="ttl_kembalian" required readonly>
                                         </div>
                                     </div>
                                 </div>
@@ -96,3 +97,28 @@
 
 
 <?= $this->endSection('content'); ?>
+
+<?= $this->Section('page_script'); ?>
+
+<script type="text/javascript">
+let total_harga = 0;
+
+$('#jumlah_item').on('input', function() {
+    let jumlah_item = this.value;
+    let harga_sepatu = $('#nama_sepatu option:selected').attr('data-harga-sepatu');
+    if (harga_sepatu) {
+        total_harga = harga_sepatu * jumlah_item;
+    } else {
+        total_harga = 0;
+    }
+    $('#ttl_harga').val(total_harga);
+});
+
+$('#ttl_dibayarkan').on('input', function() {
+    let total_dibayarkan = this.value;
+    total_kembalian = total_dibayarkan - total_harga;
+    $('#ttl_kembalian').val(total_kembalian);
+});
+</script>
+
+<?= $this->endSection('page_script'); ?>

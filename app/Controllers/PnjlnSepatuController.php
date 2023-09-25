@@ -21,6 +21,13 @@ class PnjlnSepatuController extends BaseController
         $pnjlns_sepatu = $this->PnjlnSepatuModel->select('pnjln_sepatu.*,sepatu.nama_sepatu')
         ->join('sepatu','sepatu.id = pnjln_sepatu.sepatu_id')->findAll();
 
+        foreach ($pnjlns_sepatu as $key => $pnjln_sepatu) 
+        {
+            $pnjlns_sepatu[$key]['ttl_harga'] = $this->rupiah($pnjln_sepatu['ttl_harga']);
+            $pnjlns_sepatu[$key]['ttl_dibayarkan'] = $this->rupiah($pnjln_sepatu['ttl_dibayarkan']);
+            $pnjlns_sepatu[$key]['ttl_kembalian'] = $this->rupiah($pnjln_sepatu['ttl_kembalian']);
+        }
+
         $data = [
             'title' => 'Shoes Sales Management',
             'page_title' => 'Shoes Sales List',
@@ -104,5 +111,11 @@ class PnjlnSepatuController extends BaseController
     {
         $this->PnjlnSepatuModel->delete($pnjln_sepatu_id);
         return redirect()->to('pnjln_sepatu');
+    }
+
+    public function rupiah($angka)
+    {
+        $hasil_rupiah = "Rp " . number_format($angka,2,',','.');
+        return $hasil_rupiah;
     }
 }

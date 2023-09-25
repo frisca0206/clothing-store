@@ -24,6 +24,10 @@ class SepatuController extends BaseController
         ->join('ukuran_sepatu','ukuran_sepatu.id = sepatu.ukuran_sepatu_id')
         ->join('merek','merek.id = sepatu.merek_id')->findAll();
 
+        foreach ($shoes as $key => $shoe){
+        $shoes[$key]['harga'] = $this->rupiah($shoe['harga']);
+        }
+
         $data = [
             'title' => 'Shoes Management',
             'page_title' => 'Shoes List',
@@ -97,5 +101,11 @@ class SepatuController extends BaseController
     {
         $this->SepatuModel->delete($sepatu_id);
         return redirect()->to('sepatu');
+    }
+
+    public function rupiah($angka)
+    {
+        $hasil_rupiah = "Rp " . number_format($angka,2,',','.');
+        return $hasil_rupiah;
     }
 }
